@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Las Huellas Del Planeta</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    
+    
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #a9cb9d;
+      color: #192419;
+      line-height: 1.6;
+    }
+
+   header {
+  background-color: #2e7d32; /* Color de respaldo si la imagen no carga */
+  background-image: url('imagen12.jpg');
+  background-size: cover;
+  background-position: center;
+  color: rgb(255, 253, 253);
+  text-align: center;
+  padding: 100px 50px 100px; /* Respeta el espacio visual amplio del segundo bloque */
+  position: relative;
+}
+
+
+    .menu-icon {
+      display: none;
+      font-size: 28px;
+      cursor: pointer;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    #menu-toggle {
+      display: none;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    .menu {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .menu a {
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px;
+    }
+
+    .hero {
+      height: 200px;
+      display: flex;
+      align-items: center;
+      margin-left: 250px;
+      margin-top: 100px;
+      color: rgb(83, 157, 58);
+      text-shadow: 1px 1px 3px #0e2509;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 2.5em;
+    }
+
+    .section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section h3 {
+      color: #2e7d32;
+      margin-bottom: 15px;
+      font-size: 1.8em;
+    }
+
+    .section p, .section ul, .section ol {
+      font-size: 1.1em;
+      margin-bottom: 20px;
+    }
+
+    ul, ol {
+      margin-left: 20px;
+      margin-top: 10px;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+
+    footer {
+      background-color: #1b5e20;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    /* Responsive menu */
+    @media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    background-color: #2e7d32;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    width: 220px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    z-index: 100;
+  }
+
+  #menu-toggle:checked + .menu-icon + nav .menu {
+    display: flex;
+  }
+
+  .menu a {
+    padding: 10px;
+    font-size: 0.95em;
+    border-top: 1px solid #4caf50;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Las Huellas Del Planeta</h1>
+    
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+    <nav>
+      <div class="menu">
+        <a href="index.html">Inicio</a>
+        <a href="huellaeco.html">Huella ecologica</a>
+        <a href="huellacar.html">Huella de Carbono</a>
+        <a href="huellahidri.html">Huella Hídrica</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdNBSVb-ZsbO1TCDYUu9-jBgA-Gcwyjfe7sB7sjM6pvSzXKbQ/viewform?usp=header" target="_blank">Formulario</a>
+      </div>
+    </nav>
+    <img src="gif3.gif" alt="gif" class="hero">
+  </header>
+
+  
+
+  <section id="que-es" class="section">
+    <h3>Proposito de la huella ecologica</h3>
+    <p>El propósito de la huella ecológica es proporcionar una herramienta clara y cuantificable para entender el impacto ambiental de las actividades humanas, tanto a nivel individual como colectivo (ciudades, empresas, países.</p>
+    <img src="imagen13.jpg"alt="huellaeco">
+    <h3>Proposito de la huella de carbono</h3>
+    <p>El propósito de la huella ecológica es proporcionar una herramienta clara y cuantificable para entender el impacto ambiental de las actividades humanas, tanto a nivel individual como colectivo (ciudades, empresas, países). Su objetivo principal es ayudar a:
+	<p>1.Medir la sostenibilidad</p>
+    <p>2.Fomentar la conciencia ambiental</p>
+    <p>3.Guiar políticas y decisiones</p>
+    <p>4.Promover un desarrollo sostenible</p>
+    <img src="imagen14.jpg"alt="huelladecar">
+    <h3>Proposito de la huella hidrica</h3>
+    <p>El propósito de la huella hídrica es medir el uso total de agua dulce que implica la producción de bienes y servicios, tanto de forma directa como indirecta. Esta métrica permite entender cuánta agua se consume en toda la cadena de producción, desde la extracción de materias primas hasta el producto final.</p>
+    <img src="imagen15.jpg"alt="huelladecar">
+</section>
+  <footer>
+    <p>&copy; 2025 Conciencia Ambiental | Diseñado con responsabilidad 🌿</p>
+  </footer>
+
+</body>
+</html>

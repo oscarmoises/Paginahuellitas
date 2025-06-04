@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Huella Hídrica</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .centrado{
+        text-align: center;
+        font-size: 2em;
+        text-shadow: 1px 1px 3px #14c31a;
+    }
+
+   body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #bbbbbb;
+      color: #2b2b2b;
+      line-height: 1.6;
+    }
+
+
+   header {
+  background-color: #2979a1; /* Color de respaldo si la imagen no carga */
+  background-image: url('imagen11.jpeg');
+  background-size: cover;
+  background-position: center;
+  color: rgb(58, 57, 57);
+  text-align: center;
+  padding: 100px 20px 10px; /* Respeta el espacio visual amplio del segundo bloque */
+  position: relative;
+}
+
+
+    .menu-icon {
+      display: none;
+      font-size: 28px;
+      cursor: pointer;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    #menu-toggle {
+      display: none;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    .menu {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .menu a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px;
+    }
+
+    .hero {
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 1px 1px 3px #000;
+      text-align: center;
+    }
+
+    .section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section h3 {
+      color: #0277bd;
+      margin-bottom: 15px;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+
+    footer {
+      background-color: #01579b;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    /* Responsive menu */
+     @media (max-width: 768px) {
+      .menu-icon {
+        display: block;
+      }
+
+      .menu {
+        display: none;
+        flex-direction: column;
+        background-color: #01579b;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        width: 220px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        z-index: 100;
+      }
+
+      #menu-toggle:checked + .menu-icon + nav .menu {
+        display: flex;
+      }
+
+      .menu a {
+        padding: 10px;
+        font-size: 0.95em;
+        border-top: 1px solid #01579b;
+    }
+}
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Huella Hídrica</h1>
+  <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+    <nav>
+        <div class="menu">
+        <a href="index.html.html">Inicio</a>
+        <a href="huellaeco.html">Huella ecologica</a>
+        <a href="huellacar.html">Huella de Carbono</a>
+        <a href="huellahidri.html">Huella Hídrica</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdNBSVb-ZsbO1TCDYUu9-jBgA-Gcwyjfe7sB7sjM6pvSzXKbQ/viewform?usp=header" target="_blank">Formulario</a>
+      </div>
+    </nav>
+    <section class="hero">
+    <h2>¿Cuánta agua consumes realmente?</h2>
+  </section>
+  </header>
+
+  
+
+  <section class="section">
+    <h3>¿Qué es la huella hídrica?</h3>
+    <p>Es el volumen total de agua dulce que se utiliza directa o indirectamente para producir los bienes y servicios que consumimos, desde la comida hasta la ropa o la energía.</p>
+    <img src="imagen10.jpeg" alt="Gota de agua cayendo" >
+  </section>
+
+  <section class="section">
+    <h3>¿Cómo reducirla?</h3>
+    <ul>
+      <li>Dúchate en menos tiempo y arregla fugas en casa.</li>
+      <li>Consume menos carne y productos industrializados.</li>
+      <li>Reutiliza agua cuando sea posible.</li>
+      <li>Compra ropa y productos con menor huella hídrica.</li>
+      <img src="imagen9.jpeg" alt="Humo de fábricas">
+    </ul>
+  </section>
+
+  <p class="centrado"><a href="https://caem.org.co/ConveniosCARCAEM/huellahidrica/">¡¡Aqui puedes calcular tu huella de carbono!!</a></p>
+
+  <footer>
+    <p>&copy; 2025 Conciencia Ambiental | Preservando el agua 💧</p>
+  </footer>
+
+</body>
+</html>

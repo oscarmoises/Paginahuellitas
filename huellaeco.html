@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Huella Ecológica</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .centrado{
+        text-align: center;
+        font-size: 2em;
+        text-shadow: 1px 1px 3px #14c31a;
+    }
+    
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #98ca88;
+      color: #606160;
+      line-height: 1.6;
+    }
+
+   header {
+  background-color: #2e7d32; /* Color de respaldo si la imagen no carga */
+  background-image: url('imagen5.jpeg');
+  background-size: cover;
+  background-position: center;
+  color: rgb(58, 57, 57);
+  text-align: center;
+  padding: 100px 20px 10px; /* Respeta el espacio visual amplio del segundo bloque */
+  position: relative;
+}
+
+
+    .menu-icon {
+      display: none;
+      font-size: 28px;
+      cursor: pointer;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    #menu-toggle {
+      display: none;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    .menu {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .menu a {
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px;
+    }
+
+    .hero {
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgb(71, 131, 51);
+      text-shadow: 1px 1px 3px #0e2509;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 2.5em;
+    }
+
+    .section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section h3 {
+      color: #2e7d32;
+      margin-bottom: 15px;
+      font-size: 1.8em;
+    }
+
+    .section p, .section ul, .section ol {
+      font-size: 1.1em;
+      margin-bottom: 20px;
+    }
+
+    ul, ol {
+      margin-left: 20px;
+      margin-top: 10px;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+
+    footer {
+      background-color: #1b5e20;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    /* Responsive menu */
+    @media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    background-color: #2e7d32;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    width: 220px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    z-index: 100;
+  }
+
+  #menu-toggle:checked + .menu-icon + nav .menu {
+    display: flex;
+  }
+
+  .menu a {
+    padding: 10px;
+    font-size: 0.95em;
+    border-top: 1px solid #4caf50;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Huella Ecológica</h1>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+    <nav>
+      <div class="menu">
+        <a href="index.html.html">Inicio</a>
+        <a href="huellaeco.html">Huella ecologica</a>
+        <a href="huellacar.html">Huella de Carbono</a>
+        <a href="huellahidri.html">Huella Hídrica</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdNBSVb-ZsbO1TCDYUu9-jBgA-Gcwyjfe7sB7sjM6pvSzXKbQ/viewform?usp=header" target="_blank">Formulario</a>
+      </div>
+    </nav>
+    <section class="hero">
+    <h2>Tu impacto en el planeta importa</h2>
+  </section>
+  </header>
+
+  
+
+  <section id="que-es" class="section">
+    <h3>¿Qué es la huella ecológica?</h3>
+    <p>La huella ecológica es un indicador que mide cuánta tierra y agua necesitamos para producir los recursos que consumimos y para absorber los residuos que generamos, especialmente las emisiones de carbono. Incluye elementos como el consumo energético, transporte, alimentación y desechos.</p>
+    <p>Esta herramienta nos permite comparar nuestro estilo de vida con la capacidad regenerativa del planeta, ayudándonos a entender si vivimos de forma sostenible o si estamos sobrepasando los límites ecológicos.</p>
+    <img src="imagen1.jpeg">
+  </section>
+
+  <section id="causas" class="section">
+    <h3>Causas principales de una huella ecológica alta</h3>
+    <ul>
+      <li>Dependencia excesiva de combustibles fósiles (transporte, calefacción, industrias).</li>
+      <li>Deforestación para agricultura, ganadería extensiva o expansión urbana.</li>
+      <li>Consumo elevado de productos importados y procesados.</li>
+      <li>Desperdicio de alimentos y agua potable.</li>
+      <li>Mal manejo de residuos y baja tasa de reciclaje.</li>
+    </ul>
+  </section>
+
+  <section id="soluciones" class="section">
+    <h3>¿Cómo reducir nuestra huella ecológica?</h3>
+    <ol>
+      <li>Adoptar formas de transporte sostenibles: caminar, bici, transporte público o vehículos eléctricos.</li>
+      <li>Comprar alimentos de producción local, de temporada y preferir opciones basadas en plantas.</li>
+      <li>Reducir el consumo energético en casa: usar bombillas LED, apagar aparatos, mejorar aislamiento.</li>
+      <li>Minimizar el uso de plásticos de un solo uso y fomentar la economía circular (reducir, reutilizar, reciclar).</li>
+      <li>Participar en programas comunitarios y apoyar políticas públicas ambientales.</li>
+    </ol>
+    <img src="imagen2.jpeg" alt="Personas reciclando">
+  </section>
+
+  <p class="centrado"><a href="https://calculadora-ecologica.climatehero.org/?source=GoogleKeywordsLatin&gad_source=1&gad_campaignid=17321787513&gbraid=0AAAAAD-SQMVdIH1tajoxopX5MeaomZlEe&gclid=CjwKCAjwl_XBBhAUEiwAWK2hzqWP98FWeF6LiGxS5JhXVBTOwHmv7Ko47LNiDaVevahHonC_FoLnXxoCed4QAvD_BwE" target="_blank">¡¡Aqui puedes calcular tu huella ecologica!!</a></p>
+
+
+
+  <footer>
+    <p>&copy; 2025 Conciencia Ambiental | Diseñado con responsabilidad 🌿</p>
+  </footer>
+
+</body>
+</html>
